@@ -1,0 +1,22 @@
+@import '../../scss/_colors.scss';
+
+.PricesSection {
+  background: $brown;
+  padding: 4em;
+
+  &__header {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+  &__tables {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4em auto;
+    max-width: 1200px;
+  }
+}

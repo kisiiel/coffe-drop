@@ -1,0 +1,42 @@
+@import '../../scss/_colors.scss';
+
+.PriceTable {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 300px;
+  position: relative;
+
+  &__title {
+    font-weight: bold;
+    margin: 1em 0;
+    text-align: center;
+    color: $green;
+  }
+
+  &__list {
+    background: rgba(216, 216, 216, 0.15);
+    border-radius: 5px;
+    margin: 0 1em;
+    & li {
+      padding: 0 1em;
+      color: white;
+      font-weight: bold;
+      // border: 1px solid white;
+      height: 55px;
+      display: flex;
+      align-items: center;
+
+      &:nth-child(even) {
+        border-radius: 5px;
+        background: rgba(216, 216, 216, 0.15);
+      }
+    }
+  }
+
+  &__beansIcon {
+    position: absolute;
+    height: 36px;
+    bottom: -24px;
+    left: calc(50% - 18px);
+  }
+}
