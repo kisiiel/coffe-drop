@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 
 
 import Pin from '../../assets/map-pin.svg';
-const AnyReactComponent = () => <img src={Pin}/>;
+const MapPin = () => <img src={Pin}/>;
 
 
 
@@ -30,13 +30,24 @@ class MapSection extends Component {
     this.getLocations(url)
   }
 
-
+  /**
+   *
+   * @param {array} data
+   * Mapaing data from Api to get only coordinates values of shops
+   */
   mapLocations(data) {
     return data.map(location => ({
         ...location.coordinates
     }))
   }
 
+
+  /**
+   *
+   * @param {string} url
+   * get list of location and check if there are another API paginated pages. Merge all data into state.locations
+   *
+   */
   getLocations( url ) {
     fetch(url)
       .then(data => data.json())
@@ -52,11 +63,12 @@ class MapSection extends Component {
       }).catch(err => console.log(err));
   }
 
+  // Map all locations as Pins for map.
   createPins() {
     const locations = this.mapLocations(this.state.locations);
 
     return locations.map(location => (
-      <AnyReactComponent
+      <MapPin
         lat={location.latitude}
         lng={location.longitude}
       />
