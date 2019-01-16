@@ -1,0 +1,13 @@
+@import '../../scss/_colors.scss';
+
+.Footer {
+  text-align: center;
+  background: $brown;
+  padding: 1em;
+
+  & p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0.5em
+  }
+}
