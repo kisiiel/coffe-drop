@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CoffeDrop from './CoffeDrop';
 import * as serviceWorker from './serviceWorker';
+import './index.scss';
 
 ReactDOM.render(<CoffeDrop />, document.getElementById('root'));
 
