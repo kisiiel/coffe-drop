@@ -1,0 +1,14 @@
+.Menu {
+  display: flex;
+  align-items: center;
+  &__item {
+    padding: 1em;
+    border: 2px solid rgba(255, 255, 255, 0);
+    &:hover {
+      box-sizing: border-box;
+      font-weight: bold;
+      cursor: pointer;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+}
