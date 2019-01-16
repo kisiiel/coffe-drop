@@ -1,0 +1,33 @@
+.Hero {
+  color: white;
+  height: 550px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  &__wrap {
+    background: url('../../assets/hero@2x.jpg');
+    background-size: cover;
+  }
+
+  &__header {
+    font-size: 32px;
+    margin: 0 0 32px 0;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+
+  &__appStoreButton, &__googlePlayButton {
+    height: 48px;
+    margin: 1em 1em 0 0;
+  }
+
+  &__appMockup {
+    position: absolute;
+    max-height: 80%;
+    bottom: 0;
+    right: 0;
+  }
+}
