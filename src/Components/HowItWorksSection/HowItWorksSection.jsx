@@ -17,14 +17,22 @@ const HowItWorksSection = () => (
         <p>You can now save the planet in style, thanks to cashback for your nespresso pods at any of our sixteen locations nationwide.</p>
       </div>
 
-      <img src={Arrow} alt="Go to next step"/>
+      <img
+        className="HowItWorksSection__arrow"
+        src={Arrow}
+        alt="Go to next step"
+      />
 
       <div className="HowItWorksSection__step">
         <img src={IconTwo} alt="First Step"/>
         <p>You can now save the planet in style, thanks to cashback for your nespresso pods at any of our sixteen locations nationwide.</p>
       </div>
 
-      <img src={Arrow} alt="Go to next step"/>
+      <img
+        className="HowItWorksSection__arrow"
+        src={Arrow}
+        alt="Go to next step"
+      />
 
       <div className="HowItWorksSection__step">
         <img src={IconThree} alt="First Step"/>

@@ -12,12 +12,23 @@
 
   &__steps {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 4em;
+    @media screen and (max-width: 840px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__arrow {
+    @media screen and (max-width: 840px) {
+      display: none;
+    }
   }
 
 
   &__step {
+    max-width: 30%;
+    margin: 0 1em 2em 1em;
     display: flex;
     flex-direction: column;
     max-width: 300px;
