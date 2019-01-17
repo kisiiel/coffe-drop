@@ -7,10 +7,10 @@ import './NavBar.scss'
 
 const NavBar = () => {
   return (
-    <div className="NavBar">
+    <nav className="NavBar">
       <img className="NavBar__logo" src={Logo} alt="CoffeDrop"/>
       <Menu/>
-    </div>
+    </nav>
    );
 }
 
