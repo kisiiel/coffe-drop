@@ -1,14 +1,61 @@
 .Menu {
   display: flex;
   align-items: center;
+  margin: 1em 0 0 0;
+  @media screen and (max-width: 740px) {
+    display: none;
+    margin: unset;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+  }
   &__item {
     padding: 1em;
     border: 2px solid rgba(255, 255, 255, 0);
+    @media screen and (max-width: 740px) {
+      border: none;
+      text-align: center;
+    }
     &:hover {
       box-sizing: border-box;
       font-weight: bold;
       cursor: pointer;
       border: 2px solid rgba(255, 255, 255, 0.3);
+      @media screen and (max-width: 740px) {
+        border: none;
+      }
+    }
+
+
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    padding: none;
+    height: 100px;
+    width: 100px;
+    display: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    &:focus + .Menu {
+      display: initial;
+    }
+
+    @media screen and (max-width: 740px) {
+      display: initial;
     }
   }
 }
